@@ -1,15 +1,15 @@
 def list_len(a):
-    c=0
+    count=0
     for i in a:
-        c+=1
-    return c
+        count+=1
+    return count
 
 m=eval(input("Enter the list:"))
-n=[]
+dup_list=[]
 l=list_len(m)# calling a user defined func for calc length
 for i in range(0,l):
     if(i<l-1):
-        n.append(m[i]+m[i+1])
+        dup_list.append(m[i]+m[i+1])
     else:
-        n.append(m[i])
-print("The required list is", n)
+        dup_list.append(m[i])
+print("The required list is", dup_list)

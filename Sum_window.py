@@ -1,8 +1,8 @@
 def seq_sum(st,l,k):#st=start, l=list, k=sublist size
-    s=0
+    sum=0
     for i in range(st,k+st):
-        s+=l[i]
-    return s
+        sum+=l[i]
+    return sum
 
 k=3
 l=[2,1,5,1,3,2]
