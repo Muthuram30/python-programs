@@ -1,7 +1,7 @@
-def count(l,c):
+def count(list,num):
     s=0
-    for i in l:
-        if (i==c):
+    for i in list:
+        if (i==num):
             s+=1
     return s
 l=[0,1,0,0,1,1,0]
