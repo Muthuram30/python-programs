@@ -1,14 +1,14 @@
-l=[2,3,1,2,4,3]
-t=7
+list=[2,3,1,2,4,3]
+target=7
 d=[]
-for i in range(len(l)):
-    s=c=0#s=sum and c=count of subarray length and this count is stored in list d
-    for j in range(i,len(l)):
-        s+=l[j]
-        c+=1
-        if(s>t):
+for i in range(len(list)):
+    sum=count=0#s=sum and c=count of subarray length and this count is stored in list d
+    for j in range(i,len(list)):
+        sum+=list[j]
+        count+=1
+        if(sum>target):
             break
-        if(s==t):
-            d.append(c)
+        if(sum==target):
+            d.append(count)
             break
 print("Output", min(d))
